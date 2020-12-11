@@ -1,0 +1,14 @@
+.foot-nav, .footer {
+  margin: 0 auto;
+  width: 1226px;
+}
+
+.foot-nav {
+  height: 335px;
+  border: 2px solid red;
+}
+
+.footer {
+  height: 120px;
+  border: 2px solid red;
+}

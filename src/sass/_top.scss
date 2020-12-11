@@ -1,0 +1,93 @@
+$page_width:100%;
+$box_width:1226px;
+$box_height:120px;
+$img-width:316px;
+$font12:12px;
+$font14:14px;
+$font16:16px;
+// 广告ad：
+.adv {
+    // position: absolute;
+    // top: 0;
+    width: $page_width;
+    height: $box_height;
+    background: url(https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/bb3c06a430689ba2357dd7d1fbfa6bab.jpg?w=5120&h=240) no-repeat 50%;
+    background-size: auto $box_height;
+}
+
+%wrap {
+    margin: 0 auto;
+    width: $box_width;
+}
+
+%topnav {
+    font-size: $font14;
+    line-height: 50px;
+    text-align: center;
+    color: #ADB1B2;
+}
+
+%span {
+    color: #404040;
+    padding: 0 7px;
+}
+
+%topnav-r {
+    padding-left: 16px;
+    padding-right: 24px;
+}
+
+// 顶部导航 top
+.top {
+    width: $page_width;
+    background-color: #333333;
+    height: 50px;
+    .top-navigation {
+        color: #ddd;
+        font-size: $font12;
+        @extend %wrap;
+        .topnav-li {
+            float: left;
+            a {
+                @extend %topnav;
+            }
+        }
+    }
+    .dl {
+        border-right: 1px solid #404040;
+        @extend %span;
+        a {
+            @extend %topnav;
+        }
+    }
+    .zc {
+        border-right: 1px solid #404040;
+        @extend %span;
+        a {
+            @extend %topnav;
+        }
+    }
+    .xx {
+        @extend %topnav-r;
+        a {
+            @extend %topnav;
+        }
+    }
+    .car {
+        @extend %topnav-r;
+        a {
+            @extend %topnav;
+        }
+    }
+    .car:hover {
+        background: #464543;
+    }
+}
+
+.top a:hover {
+    color: #fff;
+}
+
+.topnav-li span {
+    @extend %span;
+}

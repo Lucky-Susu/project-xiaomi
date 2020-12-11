@@ -1,0 +1,75 @@
+$page_width:100%;
+$box_width:1226px;
+$box_height:120px;
+$img-width:316px;
+$font12:12px;
+$font14:14px;
+$font16:16px;
+//头部导航 header
+%wrap {
+    margin: 0 auto;
+    width: $box_width;
+}
+
+.header {
+    height: $box_height;
+    @extend %wrap;
+    .head-logo {
+        width: 55px;
+        height: 55px;
+        line-height: $box_height;
+        margin: 30px 20px 30px 0;
+        background: url(http://s02.mifile.cn/assets/static/image/mi-logo.png) #FF6701 no-repeat 50% 50%;
+    }
+    .head-img {
+        width: 165px;
+        height: 100px;
+        line-height: $box_height;
+        background: url(https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/1e455ea5dca7763e88f7a4bfface056d.jpg?w=165&h=55) no-repeat 50% 50%;
+    }
+}
+
+.head-nav {
+    .nav-li {
+        position: relative;
+        float: left;
+        padding: 45px 10px;
+        a {
+            font-size: $font16;
+            line-height: $page_width;
+        }
+        a:hover {
+            color: #FF6701;
+        }
+    }
+}
+
+//广告 banner
+.banner {
+    @extend %wrap;
+    height: 460px;
+    border: 2px solid red;
+    .banner-left {
+        width: 236px;
+        background: #000;
+    }
+}
+
+//广告ad
+.ad {
+    @extend %wrap;
+    height: 170px;
+    border: 2px solid red;
+    .ad-menu {
+        width: 234px;
+    }
+    .ad-img1 {
+        width: $img-width;
+    }
+    .ad-img2 {
+        width: $img-width;
+    }
+    .ad-img3 {
+        width: $img-width;
+    }
+}

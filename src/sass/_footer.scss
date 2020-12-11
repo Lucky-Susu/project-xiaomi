@@ -1,0 +1,41 @@
+$page_width:100%;
+$box_width:1226px;
+$box_height:120px;
+$img-width:316px;
+$font12:12px;
+$font14:14px;
+$font16:16px;
+%wrap {
+    margin: 0 auto;
+    width: $box_width;
+}
+
+%topnav {
+    font-size: $font14;
+    line-height: 50px;
+    text-align: center;
+    color: #ADB1B2;
+}
+
+%span {
+    color: #404040;
+    padding: 0 7px;
+}
+
+%topnav-r {
+    padding-left: 16px;
+    padding-right: 24px;
+}
+
+// 尾部 footer
+.foot-nav {
+    @extend %wrap;
+    height: 335px;
+    border: 2px solid red;
+}
+
+.footer {
+    @extend %wrap;
+    height: $box_height;
+    border: 2px solid red;
+}

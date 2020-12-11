@@ -1,0 +1,29 @@
+.main-active, .main-img, .main-goods-sj, .main-goods-jd1, .main-goods-jd2 {
+  margin: 0 auto;
+  width: 1226px;
+}
+
+.main-active {
+  height: 440px;
+  border: 2px solid red;
+}
+
+.main-img {
+  height: 120px;
+  border: 2px solid red;
+}
+
+.main-goods-sj {
+  height: 630px;
+  border: 2px solid red;
+}
+
+.main-goods-jd1 {
+  height: 300px;
+  border: 2px solid red;
+}
+
+.main-goods-jd2 {
+  height: 300px;
+  border: 2px solid red;
+}
