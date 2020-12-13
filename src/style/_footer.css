@@ -1,14 +1,145 @@
-.foot-nav, .footer {
+.foot .foot-ul, .foot .foot-nav, .footer .footer-wrap {
   margin: 0 auto;
   width: 1226px;
 }
 
-.foot-nav {
-  height: 335px;
-  border: 2px solid red;
+.foot {
+  height: 270px;
+  background: #fff;
+  position: relative;
+}
+
+.foot .foot-ul {
+  margin-bottom: 40px;
+  border-bottom: 1px solid #E0E0E0;
+}
+
+.foot .foot-ul .foot-li {
+  float: left;
+  font-size: 16px;
+  line-height: 25px;
+  text-align: center;
+  padding: 0 50px;
+  margin: 30px 0px;
+  border-right: 1px solid #E0E0E0;
+}
+
+.foot .foot-ul .foot-li .iconfont {
+  font-size: 18px;
+}
+
+.foot .foot-ul .li5 {
+  border-right: none;
+}
+
+.foot .foot-nav {
+  height: 120px;
+}
+
+.foot .foot-nav .fnav-li {
+  float: left;
+  font-size: 16px;
+  padding-bottom: 20px;
+  padding-right: 105px;
+  position: relative;
+}
+
+.foot .foot-nav .fnav-li .fnav-ul {
+  position: absolute;
+  bottom: -95px;
+  left: 0;
+}
+
+.foot .foot-nav .fnav-li .fnav-ul .fnav-xli {
+  font-size: 13px;
+  padding-bottom: 15px;
+}
+
+.foot .foot-r {
+  margin: 30px 0;
+  height: 120px;
+  width: 253px;
+  text-align: center;
+  border-left: 1px solid #E0E0E0;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.foot .foot-r .num {
+  font-size: 20px;
+  color: #FF6701;
+}
+
+.foot .foot-r .date {
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.foot .foot-r .kf {
+  text-align: center;
+  width: 84px;
+  height: 28px;
+  margin-top: 10px;
+  margin-left: 88px;
+  border: 1px solid #FF6701;
+}
+
+.foot .foot-r .kf a {
+  font-size: 12px;
+  text-align: center;
+  line-height: 30px;
+  color: #FF6701;
+}
+
+.foot .foot-r .kf .kf:hover a {
+  color: #fff;
+}
+
+.foot .foot-r .kf .kf:hover {
+  background: #FF6701;
 }
 
 .footer {
-  height: 120px;
-  border: 2px solid red;
+  height: 165px;
+  background: #FAFAFA;
+}
+
+.footer .footer-wrap .f-con {
+  position: relative;
+  height: 55px;
+  width: 660px;
+  padding-top: 30px;
+  padding-left: 80px;
+}
+
+.footer .footer-wrap .f-con .footer-logo {
+  position: absolute;
+  left: 0;
+  top: 30px;
+  width: 55px;
+  height: 55px;
+  line-height: 120px;
+  margin: 30px 20px 30px 0;
+  background: url(http://s02.mifile.cn/assets/static/image/mi-logo.png) #FF6701 no-repeat 50% 50%;
+}
+
+.footer .footer-wrap .f-con .footer-ul .footer-li {
+  float: left;
+  font-size: 12px;
+  color: #979797;
+}
+
+.footer .footer-wrap .f-con .footer-ul .footer-li .footer-li span {
+  padding: 0 5px;
+}
+
+.footer .footer-wrap .f-con .footer-ul .footer-li .footer-li a {
+  font-size: 12px;
+  color: #757575;
+}
+
+.footer .footer-wrap .f-con .f-con p {
+  font-size: 12px;
+  color: #aca9a9;
 }

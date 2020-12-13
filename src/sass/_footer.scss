@@ -10,32 +10,130 @@ $font16:16px;
     width: $box_width;
 }
 
-%topnav {
-    font-size: $font14;
-    line-height: 50px;
-    text-align: center;
-    color: #ADB1B2;
-}
-
-%span {
-    color: #404040;
-    padding: 0 7px;
-}
-
-%topnav-r {
-    padding-left: 16px;
-    padding-right: 24px;
-}
-
 // 尾部 footer
-.foot-nav {
-    @extend %wrap;
-    height: 335px;
-    border: 2px solid red;
+.foot {
+    height: 270px;
+    background: #fff;
+    position: relative;
+    .foot-ul {
+        @extend %wrap;
+        margin-bottom: 40px;
+        border-bottom: 1px solid #E0E0E0;
+        .foot-li {
+            float: left;
+            font-size: 16px;
+            line-height: 25px;
+            text-align: center;
+            padding: 0 50px;
+            margin: 30px 0px;
+            border-right: 1px solid #E0E0E0;
+            .iconfont {
+                font-size: 18px;
+            }
+        }
+        .li5 {
+            border-right: none;
+        }
+    }
+    .foot-nav {
+        @extend %wrap;
+        height: 120px;
+        .fnav-li {
+            float: left;
+            font-size: 16px;
+            padding-bottom: 20px;
+            padding-right: 105px;
+            position: relative;
+            .fnav-ul {
+                position: absolute;
+                bottom: -95px;
+                left: 0;
+                .fnav-xli {
+                    font-size: 13px;
+                    padding-bottom: 15px;
+                }
+            }
+        }
+    }
+    .foot-r {
+        margin: 30px 0;
+        height: 120px;
+        width: 253px;
+        text-align: center;
+        border-left: 1px solid #E0E0E0;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        .num {
+            font-size: 20px;
+            color: #FF6701;
+        }
+        .date {
+            font-size: 12px;
+            line-height: 20px;
+        }
+        .kf {
+            text-align: center;
+            width: 84px;
+            height: 28px;
+            margin-top: 10px;
+            margin-left: 88px;
+            border: 1px solid #FF6701;
+            a {
+                font-size: 12px;
+                text-align: center;
+                line-height: 30px;
+                color: #FF6701;
+            }
+            .kf:hover a {
+                color: #fff;
+            }
+            .kf:hover {
+                background: #FF6701;
+            }
+        }
+    }
 }
 
 .footer {
-    @extend %wrap;
-    height: $box_height;
-    border: 2px solid red;
+    height: 165px;
+    background: #FAFAFA;
+    .footer-wrap {
+        @extend %wrap;
+        .f-con {
+            position: relative;
+            height: 55px;
+            width: 660px;
+            padding-top: 30px;
+            padding-left: 80px;
+            .footer-logo {
+                position: absolute;
+                left: 0;
+                top: 30px;
+                width: 55px;
+                height: 55px;
+                line-height: $box_height;
+                margin: 30px 20px 30px 0;
+                background: url(http://s02.mifile.cn/assets/static/image/mi-logo.png) #FF6701 no-repeat 50% 50%;
+            }
+            .footer-ul {
+                .footer-li {
+                    float: left;
+                    font-size: $font12;
+                    color: #979797;
+                    .footer-li span {
+                        padding: 0 5px;
+                    }
+                    .footer-li a {
+                        font-size: $font12;
+                        color: #757575;
+                    }
+                }
+            }
+            .f-con p {
+                font-size: $font12;
+                color: rgb(172, 169, 169);
+            }
+        }
+    }
 }

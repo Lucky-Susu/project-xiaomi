@@ -16,44 +16,110 @@ $font22:22px;
 // 手机展示 goods-sj
 .main {
     background: #F5F5F5;
+    padding-bottom: 15px;
     .main-goods-sj {
         @extend %wrap;
-        height: 630px;
-        .main-tit {
-            height: 60px;
-            padding-top: 20px;
-            .main-p {
-                font-size: $font22;
-                line-height: 60px;
-            }
-            .look {
-                a {
-                    font-size: 16px;
-                    line-height: 60px;
-                    .confont {
-                        padding-left: 10px;
-                        padding-right: 20px;
-                        font-size: $font22;
-                        background: #999;
-                    }
-                }
-                a:hover {
-                    text-decoration: underline;
-                }
-            }
+        // height: 630px;
+        margin-bottom: 15px;
+        .wrap {
+            @extend %wrap;
         }
     }
 }
 
-// 家电展示 goods-jd
-.main-goods-jd1 {
-    height: 300px;
-    @extend %wrap;
-    border: 2px solid red;
+.main-l {
+    width: 234px;
+    img {
+        width: 234px;
+        height: 614px;
+    }
 }
 
-.main-goods-jd2 {
-    height: 300px;
+.main-r {
+    width: 980px;
+    .goods-sj {
+        margin-bottom: 15px;
+    }
+    .sj {
+        width: 234px;
+        height: 300px;
+        background: #ffffff;
+        float: left;
+        text-align: center;
+        margin-left: 10px;
+        .inform {
+            width: 65px;
+            height: 24px;
+            background: #eb3a38;
+            font-size: 15px;
+            line-height: 24px;
+            color: #fff;
+            margin: 0 85px;
+        }
+        .list {
+            width: 160px;
+            height: 160px;
+            margin: 10px 38px 20px 38px;
+        }
+        .tit {
+            font-size: 15px;
+            font-weight: normal;
+        }
+        .tit:hover {
+            font-weight: bold;
+            text-decoration: underline;
+        }
+        .con {
+            color: #a6a6a6;
+            font-size: 12px;
+            height: 22px;
+            line-height: 22px;
+        }
+    }
+}
+
+.main-tit {
+    padding-top: 20px;
+    .main-p {
+        font-size: $font22;
+        line-height: 60px;
+    }
+    .look {
+        a {
+            font-size: 16px;
+            line-height: 60px;
+            .confont {
+                padding-left: 10px;
+                padding-right: 20px;
+                font-size: $font22;
+                background: #999;
+            }
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.main-img {
     @extend %wrap;
-    border: 2px solid red;
+    padding-top: 15px;
+    img {
+        height: 120px;
+        width: $box_width;
+    }
+}
+
+// 家电展示 goods-jd
+.main-goods-jd {
+    @extend %wrap;
+    .jd-l {
+        // height: 630px;
+        width: 234px;
+        img {
+            height: 300px;
+            width: 234px;
+            margin-bottom: 15px;
+        }
+    }
 }

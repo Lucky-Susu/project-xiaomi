@@ -1,48 +1,116 @@
-.main .main-goods-sj, .main-goods-jd1, .main-goods-jd2 {
+.main .main-goods-sj, .main .main-goods-sj .wrap, .main-img, .main-goods-jd {
   margin: 0 auto;
   width: 1226px;
 }
 
 .main {
   background: #F5F5F5;
+  padding-bottom: 15px;
 }
 
 .main .main-goods-sj {
-  height: 630px;
+  margin-bottom: 15px;
 }
 
-.main .main-goods-sj .main-tit {
-  height: 60px;
+.main-l {
+  width: 234px;
+}
+
+.main-l img {
+  width: 234px;
+  height: 614px;
+}
+
+.main-r {
+  width: 980px;
+}
+
+.main-r .goods-sj {
+  margin-bottom: 15px;
+}
+
+.main-r .sj {
+  width: 234px;
+  height: 300px;
+  background: #ffffff;
+  float: left;
+  text-align: center;
+  margin-left: 10px;
+}
+
+.main-r .sj .inform {
+  width: 65px;
+  height: 24px;
+  background: #eb3a38;
+  font-size: 15px;
+  line-height: 24px;
+  color: #fff;
+  margin: 0 85px;
+}
+
+.main-r .sj .list {
+  width: 160px;
+  height: 160px;
+  margin: 10px 38px 20px 38px;
+}
+
+.main-r .sj .tit {
+  font-size: 15px;
+  font-weight: normal;
+}
+
+.main-r .sj .tit:hover {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.main-r .sj .con {
+  color: #a6a6a6;
+  font-size: 12px;
+  height: 22px;
+  line-height: 22px;
+}
+
+.main-tit {
   padding-top: 20px;
 }
 
-.main .main-goods-sj .main-tit .main-p {
+.main-tit .main-p {
   font-size: 22px;
   line-height: 60px;
 }
 
-.main .main-goods-sj .main-tit .look a {
+.main-tit .look a {
   font-size: 16px;
   line-height: 60px;
 }
 
-.main .main-goods-sj .main-tit .look a .confont {
+.main-tit .look a .confont {
   padding-left: 10px;
   padding-right: 20px;
   font-size: 22px;
   background: #999;
 }
 
-.main .main-goods-sj .main-tit .look a:hover {
+.main-tit .look a:hover {
   text-decoration: underline;
 }
 
-.main-goods-jd1 {
-  height: 300px;
-  border: 2px solid red;
+.main-img {
+  padding-top: 15px;
 }
 
-.main-goods-jd2 {
+.main-img img {
+  height: 120px;
+  width: 1226px;
+}
+
+.main-goods-jd .jd-l {
+  width: 234px;
+}
+
+.main-goods-jd .jd-l img {
   height: 300px;
-  border: 2px solid red;
+  width: 234px;
+  margin-bottom: 15px;
 }
