@@ -2,13 +2,23 @@ $page_width:100%;
 $box_width:1226px;
 $box_height:120px;
 $img-width:316px;
+$banner460:460px;
 $font12:12px;
 $font14:14px;
 $font16:16px;
+$font24:24px;
 //头部导航 header
 %wrap {
     margin: 0 auto;
     width: $box_width;
+}
+
+%head-search {
+    height: 50px;
+    line-height: 50px;
+    border: 1px solid #e0e0e0;
+    position: absolute;
+    top: 30px;
 }
 
 .header {
@@ -44,32 +54,161 @@ $font16:16px;
     }
 }
 
+.head-search {
+    position: relative;
+    .seek {
+        right: 65px;
+        width: 230px;
+        padding: 0 10px;
+        font-size: $font14;
+        @extend %head-search;
+    }
+    .icon-fangdajing {
+        width: 52px;
+        font-size: $font24;
+        background: #fff;
+        color: #616161;
+        right: $font12;
+        @extend %head-search;
+        text-align: center;
+        cursor: pointer;
+    }
+}
+
 //广告 banner
+%show-jt {
+    position: absolute;
+    top: 50%;
+    margin-top: -60px;
+    color: #999;
+    text-decoration: none;
+    // display: none;
+    font-size: 80px;
+    z-index: 3;
+}
+
 .banner {
     @extend %wrap;
-    height: 460px;
-    border: 2px solid red;
+    height: $banner460;
+    margin-bottom: 15px;
+    position: relative;
     .banner-left {
+        z-index: 2;
         width: 236px;
-        background: #000;
+        background: rgba($color: #000000, $alpha: 0.5);
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        padding: 20px 0;
+        .left-nav-li {
+            height: 42px;
+            a {
+                font-size: $font12;
+                line-height: 42px;
+                padding-left: 30px;
+                color: #fff;
+            }
+            .icon-zuojiantou {
+                float: right;
+                margin-right: 25px;
+                font-size: $font16;
+                line-height: 42px;
+                color: #fff;
+            }
+        }
+        .left-nav-li:hover {
+            background: #ff6900;
+        }
+    }
+    .banner-show {
+        overflow: hidden;
+        position: relative;
+        height: $banner460;
+        @extend %wrap;
+        .sw-piclist {
+            position: absolute;
+            left: 0;
+            top: 0;
+            li {
+                float: left;
+                img {
+                    height: $banner460;
+                    width: $box_width;
+                }
+            }
+        }
+        .sw-btnlist {
+            position: absolute;
+            right: 50px;
+            bottom: 20px;
+            li {
+                float: right;
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                background: #ccc;
+                text-indent: -999em;
+                margin-right: 5px;
+                cursor: pointer;
+            }
+            li:hover {
+                background: #fff;
+            }
+        }
+    }
+    #show-left {
+        left: 250px;
+        @extend %show-jt;
+    }
+    #show-right {
+        right: 20px;
+        @extend %show-jt;
     }
 }
 
 //广告ad
-.ad {
-    @extend %wrap;
+%ad-img {
+    width: $img-width;
     height: 170px;
-    border: 2px solid red;
+}
+
+.ad {
+    width: $box_width;
+    height: 170px;
+    margin: 15px auto;
     .ad-menu {
-        width: 234px;
+        background: url(../images/varity-bg.png);
+        width: 240px;
+        height: 170px;
+        .xb-li {
+            float: left;
+            padding-top: 20px;
+            .iconfont {
+                padding: 0 25px;
+                font-size: $font24;
+                color: #CECCCA;
+            }
+            .xb-p {
+                font-size: $font12;
+                color: #D0CFCD;
+                text-align: center;
+                width: 78px;
+                padding-bottom: 20px;
+            }
+        }
+    }
+    .ad-img {
+        width: $img-width;
+        margin-left: 12px;
     }
     .ad-img1 {
-        width: $img-width;
+        @extend %ad-img;
     }
     .ad-img2 {
-        width: $img-width;
+        @extend %ad-img;
     }
     .ad-img3 {
-        width: $img-width;
+        @extend %ad-img;
     }
 }

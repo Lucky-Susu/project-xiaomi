@@ -2,32 +2,47 @@ $page_width:100%;
 $box_width:1226px;
 $box_height:120px;
 $img-width:316px;
+$banner460:460px;
 $font12:12px;
 $font14:14px;
 $font16:16px;
+$font22:22px;
 // 主体部分 main
 %wrap {
     margin: 0 auto;
     width: $box_width;
 }
 
-.main-active {
-    height: 440px;
-    @extend %wrap;
-    border: 2px solid red;
-}
-
-.main-img {
-    height: $box_height;
-    @extend %wrap;
-    border: 2px solid red;
-}
-
 // 手机展示 goods-sj
-.main-goods-sj {
-    @extend %wrap;
-    height: 630px;
-    border: 2px solid red;
+.main {
+    background: #F5F5F5;
+    .main-goods-sj {
+        @extend %wrap;
+        height: 630px;
+        .main-tit {
+            height: 60px;
+            padding-top: 20px;
+            .main-p {
+                font-size: $font22;
+                line-height: 60px;
+            }
+            .look {
+                a {
+                    font-size: 16px;
+                    line-height: 60px;
+                    .confont {
+                        padding-left: 10px;
+                        padding-right: 20px;
+                        font-size: $font22;
+                        background: #999;
+                    }
+                }
+                a:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
 }
 
 // 家电展示 goods-jd

@@ -1,21 +1,40 @@
-.main-active, .main-img, .main-goods-sj, .main-goods-jd1, .main-goods-jd2 {
+.main .main-goods-sj, .main-goods-jd1, .main-goods-jd2 {
   margin: 0 auto;
   width: 1226px;
 }
 
-.main-active {
-  height: 440px;
-  border: 2px solid red;
+.main {
+  background: #F5F5F5;
 }
 
-.main-img {
-  height: 120px;
-  border: 2px solid red;
-}
-
-.main-goods-sj {
+.main .main-goods-sj {
   height: 630px;
-  border: 2px solid red;
+}
+
+.main .main-goods-sj .main-tit {
+  height: 60px;
+  padding-top: 20px;
+}
+
+.main .main-goods-sj .main-tit .main-p {
+  font-size: 22px;
+  line-height: 60px;
+}
+
+.main .main-goods-sj .main-tit .look a {
+  font-size: 16px;
+  line-height: 60px;
+}
+
+.main .main-goods-sj .main-tit .look a .confont {
+  padding-left: 10px;
+  padding-right: 20px;
+  font-size: 22px;
+  background: #999;
+}
+
+.main .main-goods-sj .main-tit .look a:hover {
+  text-decoration: underline;
 }
 
 .main-goods-jd1 {
