@@ -1,0 +1,50 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li,
+ol,
+dl,
+dd,
+dt,
+input {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol,
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.clr:after {
+    content: " ";
+    display: block;
+    clear: both;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+.lf {
+    float: left;
+}
+
+.rg {
+    float: right;
+}

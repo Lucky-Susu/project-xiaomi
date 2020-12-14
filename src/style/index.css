@@ -183,6 +183,7 @@ img {
   margin-top: -60px;
   color: #999;
   text-decoration: none;
+  display: none;
   font-size: 80px;
   z-index: 3;
 }
@@ -209,7 +210,7 @@ img {
 }
 
 .banner .banner-left .left-nav-li a {
-  font-size: 12px;
+  font-size: 14px;
   line-height: 42px;
   padding-left: 30px;
   color: #fff;
@@ -223,8 +224,33 @@ img {
   color: #fff;
 }
 
-.banner .banner-left .left-nav-li:hover {
+.banner .banner-left .active {
   background: #ff6900;
+}
+
+.banner .banner-left .banner-list {
+  position: absolute;
+  left: 236px;
+  top: 0;
+  width: 990px;
+  min-height: 460px;
+  background-color: #fff;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+  display: none;
+  transition: top 0.3s ease;
+}
+
+.banner .banner-left .banner-list .item {
+  padding: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.banner .banner-left .banner-list .item a:hover {
+  color: blue;
+  text-decoration: underline;
 }
 
 .banner .banner-show {
@@ -243,7 +269,7 @@ img {
   float: left;
 }
 
-.banner .banner-show .sw-piclist li img {
+.banner .banner-show .sw-piclist li .show-img {
   height: 460px;
   width: 1226px;
 }
@@ -255,7 +281,7 @@ img {
 }
 
 .banner .banner-show .sw-btnlist li {
-  float: right;
+  float: left;
   width: 10px;
   height: 10px;
   border-radius: 50%;
@@ -265,7 +291,7 @@ img {
   cursor: pointer;
 }
 
-.banner .banner-show .sw-btnlist li:hover {
+.banner .banner-show .sw-btnlist .active {
   background: #fff;
 }
 
@@ -389,6 +415,10 @@ img {
   font-size: 12px;
   height: 22px;
   line-height: 22px;
+}
+
+.main-r .sj .price {
+  color: darkorange;
 }
 
 .main-tit {
@@ -545,7 +575,7 @@ img {
 .footer .footer-wrap .f-con {
   position: relative;
   height: 55px;
-  width: 660px;
+  width: 700px;
   padding-top: 30px;
   padding-left: 80px;
 }
@@ -557,7 +587,7 @@ img {
   width: 55px;
   height: 55px;
   line-height: 120px;
-  margin: 30px 20px 30px 0;
+  margin: 15px 20px 30px 0;
   background: url(http://s02.mifile.cn/assets/static/image/mi-logo.png) #FF6701 no-repeat 50% 50%;
 }
 
@@ -576,7 +606,7 @@ img {
   color: #757575;
 }
 
-.footer .footer-wrap .f-con .f-con p {
+.footer .footer-wrap .f-con p {
   font-size: 12px;
   color: #aca9a9;
 }

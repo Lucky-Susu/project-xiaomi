@@ -71,6 +71,10 @@
   line-height: 22px;
 }
 
+.main-r .sj .price {
+  color: darkorange;
+}
+
 .main-tit {
   padding-top: 20px;
 }

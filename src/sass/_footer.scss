@@ -103,7 +103,7 @@ $font16:16px;
         .f-con {
             position: relative;
             height: 55px;
-            width: 660px;
+            width: 700px;
             padding-top: 30px;
             padding-left: 80px;
             .footer-logo {
@@ -113,7 +113,7 @@ $font16:16px;
                 width: 55px;
                 height: 55px;
                 line-height: $box_height;
-                margin: 30px 20px 30px 0;
+                margin: 15px 20px 30px 0;
                 background: url(http://s02.mifile.cn/assets/static/image/mi-logo.png) #FF6701 no-repeat 50% 50%;
             }
             .footer-ul {
@@ -130,7 +130,7 @@ $font16:16px;
                     }
                 }
             }
-            .f-con p {
+            p {
                 font-size: $font12;
                 color: rgb(172, 169, 169);
             }

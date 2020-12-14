@@ -1,10 +1,280 @@
-* {
-    padding: 0;
-    margin: 0;
-    list-style: none;
+.top .top-navigation {
+    margin: 0 auto;
+    width: 1226px;
 }
 
-.list {
+.top .top-navigation .topnav-li a,
+.top .dl a,
+.top .zc a,
+.top .xx a,
+.top .car a {
+    font-size: 14px;
+    line-height: 50px;
+    text-align: center;
+    color: #ADB1B2;
+}
+
+.top .dl,
+.top .zc,
+.topnav-li span {
+    color: #404040;
+    padding: 0 7px;
+}
+
+.top .xx,
+.top .car {
+    padding-left: 16px;
+    padding-right: 24px;
+}
+
+.top {
+    width: 100%;
+    background-color: #333333;
+    height: 50px;
+}
+
+.top .top-navigation {
+    color: #ddd;
+    font-size: 12px;
+}
+
+.top .top-navigation .topnav-li {
+    float: left;
+}
+
+.top .dl {
+    border-right: 1px solid #404040;
+}
+
+.top .zc {
+    border-right: 1px solid #404040;
+}
+
+.top .car:hover {
+    background: #464543;
+}
+
+.top a:hover {
+    color: #fff;
+}
+
+.header,
+.banner,
+.banner .banner-show {
+    margin: 0 auto;
+    width: 1226px;
+}
+
+.head-search .seek,
+.head-search .icon-fangdajing {
+    height: 50px;
+    line-height: 50px;
+    border: 1px solid #e0e0e0;
+    position: absolute;
+    top: 30px;
+}
+
+.header {
+    height: 120px;
+}
+
+.header .head-logo {
+    width: 55px;
+    height: 55px;
+    line-height: 120px;
+    margin: 30px 20px 30px 0;
+    background: url(http://s02.mifile.cn/assets/static/image/mi-logo.png) #FF6701 no-repeat 50% 50%;
+}
+
+.header .head-img {
+    width: 165px;
+    height: 100px;
+    line-height: 120px;
+    background: url(https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/1e455ea5dca7763e88f7a4bfface056d.jpg?w=165&h=55) no-repeat 50% 50%;
+}
+
+.head-nav .nav-li {
+    position: relative;
+    float: left;
+    padding: 45px 10px;
+}
+
+.head-nav .nav-li a {
+    font-size: 16px;
+    line-height: 100%;
+}
+
+.head-nav .nav-li a:hover {
+    color: #FF6701;
+}
+
+.head-search {
+    position: relative;
+}
+
+.head-search .seek {
+    right: 65px;
+    width: 230px;
+    padding: 0 10px;
+    font-size: 14px;
+}
+
+.head-search .icon-fangdajing {
+    width: 52px;
+    font-size: 24px;
+    background: #fff;
+    color: #616161;
+    right: 12px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.banner #show-left,
+.banner #show-right {
+    position: absolute;
+    top: 50%;
+    margin-top: -60px;
+    color: #999;
+    text-decoration: none;
+    font-size: 80px;
+    z-index: 3;
+}
+
+.banner {
+    height: 460px;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.banner .banner-left {
+    z-index: 2;
+    width: 236px;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    padding: 20px 0;
+}
+
+.banner .banner-left .left-nav-li {
+    height: 42px;
+}
+
+.banner .banner-left .left-nav-li a {
+    font-size: 12px;
+    line-height: 42px;
+    padding-left: 30px;
+    color: #fff;
+}
+
+.banner .banner-left .left-nav-li .icon-zuojiantou {
+    float: right;
+    margin-right: 25px;
+    font-size: 16px;
+    line-height: 42px;
+    color: #fff;
+}
+
+.banner .banner-left .left-nav-li:hover {
+    background: #ff6900;
+}
+
+.banner .banner-show {
+    overflow: hidden;
+    position: relative;
+    height: 460px;
+}
+
+.banner .banner-show .sw-piclist {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.banner .banner-show .sw-piclist li {
+    float: left;
+}
+
+.banner .banner-show .sw-piclist li img {
+    height: 460px;
+    width: 1226px;
+}
+
+.banner .banner-show .sw-btnlist {
+    position: absolute;
+    right: 50px;
+    bottom: 20px;
+}
+
+.banner .banner-show .sw-btnlist li {
+    float: right;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #ccc;
+    text-indent: -999em;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.banner .banner-show .sw-btnlist li:hover {
+    background: #fff;
+}
+
+.banner #show-left {
+    left: 250px;
+}
+
+.banner #show-right {
+    right: 20px;
+}
+
+.ad .ad-img1,
+.ad .ad-img2,
+.ad .ad-img3 {
+    width: 316px;
+    height: 170px;
+}
+
+.ad {
+    width: 1226px;
+    height: 170px;
+    margin: 15px auto;
+}
+
+.ad .ad-menu {
+    background: url(../images/varity-bg.png);
+    width: 240px;
+    height: 170px;
+}
+
+.ad .ad-menu .xb-li {
+    float: left;
+    padding-top: 20px;
+}
+
+.ad .ad-menu .xb-li .iconfont {
+    padding: 0 25px;
+    font-size: 24px;
+    color: #CECCCA;
+}
+
+.ad .ad-menu .xb-li .xb-p {
+    font-size: 12px;
+    color: #D0CFCD;
+    text-align: center;
+    width: 78px;
+    padding-bottom: 20px;
+}
+
+.ad .ad-img {
+    width: 316px;
+    margin-left: 12px;
+}
+
+
+/* .list {
     width: 1160px;
     margin: 0 auto;
     font-size: 14px;
@@ -34,5 +304,153 @@
 }
 
 .list li span {
-   display: block;
+    display: block;
+} */
+
+.foot .foot-ul,
+.foot .foot-nav,
+.footer .footer-wrap {
+    margin: 0 auto;
+    width: 1226px;
+}
+
+.foot {
+    height: 270px;
+    background: #fff;
+    position: relative;
+}
+
+.foot .foot-ul {
+    margin-bottom: 40px;
+    border-bottom: 1px solid #E0E0E0;
+}
+
+.foot .foot-ul .foot-li {
+    float: left;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: center;
+    padding: 0 50px;
+    margin: 30px 0px;
+    border-right: 1px solid #E0E0E0;
+}
+
+.foot .foot-ul .foot-li .iconfont {
+    font-size: 18px;
+}
+
+.foot .foot-ul .li5 {
+    border-right: none;
+}
+
+.foot .foot-nav {
+    height: 120px;
+}
+
+.foot .foot-nav .fnav-li {
+    float: left;
+    font-size: 16px;
+    padding-bottom: 20px;
+    padding-right: 105px;
+    position: relative;
+}
+
+.foot .foot-nav .fnav-li .fnav-ul {
+    position: absolute;
+    bottom: -95px;
+    left: 0;
+}
+
+.foot .foot-nav .fnav-li .fnav-ul .fnav-xli {
+    font-size: 13px;
+    padding-bottom: 15px;
+}
+
+.foot .foot-r {
+    margin: 30px 0;
+    height: 120px;
+    width: 253px;
+    text-align: center;
+    border-left: 1px solid #E0E0E0;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.foot .foot-r .num {
+    font-size: 20px;
+    color: #FF6701;
+}
+
+.foot .foot-r .date {
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.foot .foot-r .kf {
+    text-align: center;
+    width: 84px;
+    height: 28px;
+    margin-top: 10px;
+    margin-left: 88px;
+    border: 1px solid #FF6701;
+}
+
+.foot .foot-r .kf a {
+    font-size: 12px;
+    text-align: center;
+    line-height: 30px;
+    color: #FF6701;
+}
+
+.foot .foot-r .kf .kf:hover a {
+    color: #fff;
+}
+
+.foot .foot-r .kf .kf:hover {
+    background: #FF6701;
+}
+
+.footer {
+    height: 165px;
+    background: #FAFAFA;
+}
+
+.footer .footer-wrap .f-con {
+    position: relative;
+    height: 55px;
+    width: 700px;
+    padding-top: 30px;
+    padding-left: 80px;
+}
+
+.footer .footer-wrap .f-con .footer-logo {
+    position: absolute;
+    left: 0;
+    top: 30px;
+    width: 55px;
+    height: 55px;
+    line-height: 120px;
+    margin: 30px 20px 30px 0;
+    background: url(http://s02.mifile.cn/assets/static/image/mi-logo.png) #FF6701 no-repeat 50% 50%;
+}
+
+.footer .footer-wrap .f-con .footer-ul .footer-li {
+    float: left;
+    font-size: 12px;
+    color: #979797;
+}
+
+.footer .footer-wrap .f-con .footer-ul .footer-li .footer-li span {
+    padding: 0 5px;
+}
+
+.footer .footer-wrap .f-con .footer-ul .footer-li .footer-li a {
+    font-size: 12px;
+    color: #757575;
+}
+
+.footer .footer-wrap .f-con p {
+    font-size: 12px;
+    color: #aca9a9;
 }
