@@ -7,8 +7,12 @@
     <title>小米手机/小米平板 - 小米商城</title>
     <meta name="description" content="小米商城-直营小米手机、红米手机，囊括小米5，小米Max，小米4S，小米4c，红米Note 3、红米3S，支持移动、联通、电信多个版本，欢迎选购。" />
     <meta name="keywords" content="小米手机,小米手机价格,小米手机大全,小米平板电脑,小米商城" />
-    <!-- <link rel="stylesheet" href="css/pagination.css"> -->
+    <link rel="stylesheet" href="style/pagination.css">
+    <link rel="stylesheet" href="fonts/iconfont.css">
     <link rel="stylesheet" href="style/public.css">
+    <link rel="stylesheet" href="style/_top.css">
+    <link rel="stylesheet" href="style/_header.css">
+    <link rel="stylesheet" href="style/_footer.css">
     <link rel="stylesheet" href="style/list.css">
     <script src="https://cdn.bootcdn.net/ajax/libs/require.js/2.3.6/require.min.js" defer async=true data-main="script/main.js" id="currentpage" data-origin="list_module"></script>
 </head>
@@ -115,29 +119,40 @@
         </div>
     </div>
 
-
-    <div class="header" style="height: 1000px; width: 1000px; background-color: #ccc;margin: 0 auto;">
-
-    </div>
-    <!-- 列表页的结构 -->
-    <div class="list">
-        <ul>
-
+    <!-- 主体内容 -->
+    <div class="section">
+        <!-- 排序 -->
+        <ul class="sort clr">
+            <li class="sort-li">
+                <a href="javascript:;">综合</a>
+            </li>
+            <li class="sort-li">
+                <a href="javascript:;">价格升序</a>
+            </li>
+            <li class="sort-li">
+                <a href="javascript:;">价格降序</a>
+            </li>
         </ul>
+
+
+        <!-- 列表页的结构 -->
+        <div class="list">
+            <ul class="ulist">
+
+            </ul>
+        </div>
+
+        <!-- 分页的结构 -->
+        <div class="pagelist">
+            <div class="m-style page">
+            </div>
+        </div>
+
     </div>
 
-    <!-- 分页的结构 -->
-    <div class="pagelist">
-        <div class="m-style page">
-        </div>
-    </div>
-    <!-- 引入jquery -->
-    <!-- 引入懒加载插件 -->
-    <!-- 引入分页的插件 -->
-    <!-- 引入列表js代码 -->
 
     <!-- 尾部 footer -->
-    <div class="foot">
+    <div class="foot clr">
         <ul class="foot-ul clr">
             <li class="foot-li">
                 <span class="iconfont icon-gongju"></span>
@@ -218,7 +233,7 @@
             </p>
         </div>
     </div>
-    <div class="footer">
+    <div class="footer clr">
         <div class="footer-wrap">
             <div class="f-con">
                 <span class="footer-logo"></span>

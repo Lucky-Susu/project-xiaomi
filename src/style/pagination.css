@@ -1,21 +1,25 @@
 @charset "UTF-8";
-*{
+* {
     padding: 0;
-    margin:0;
+    margin: 0;
 }
-a{
+
+a {
     text-decoration: none;
 }
+
 .pagelist {
     clear: both;
-    width:1170px;
-    margin:0 auto;
+    width: 1170px;
+    margin: 0 auto;
     text-align: right;
-    padding-right:20px;
+    padding-right: 20px;
+    overflow: hidden;
 }
+
 .m-style {
     float: right;
-    text-align: center; 
+    text-align: center;
 }
 
 .m-style:before,
@@ -45,10 +49,10 @@ a{
     width: 38px;
     height: 38px;
     line-height: 38px;
-    background: #e91e63;
+    background: coral;
     color: #fff;
     font-size: 14px;
-    border: 1px solid #e91e63;
+    border: 1px solid coral;
 }
 
 .m-style a {
@@ -65,7 +69,7 @@ a{
 
 .m-style a:hover {
     color: #fff;
-    background: #e91e63;
+    background: coral;
 }
 
 .m-style .next,
@@ -73,7 +77,7 @@ a{
     font-family: "Simsun";
     font-size: 16px;
     font-weight: bold;
-    width:80px;
+    width: 80px;
 }
 
 .now,

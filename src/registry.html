@@ -14,29 +14,33 @@
     <div class="form">
         <p class="logo"></p>
         <h3>小米账号注册</h3>
-        <form action="http://localhost:8080/dashboard/project-xiaomi/php/reg.php" method="post">
+        <form action="http://192.168.64.2/dashboard/project-xiaomi/php/reg.php" method="post">
             <div class="user">
                 <p><label for="">用户名：</label></p>
                 <p><input type="text" name="username" id="username"><span></span></p>
                 <p class="hint"></p>
             </div>
-            <div class="possword">
+            <div class="poss">
                 <p><label for="">密　码：</label></p>
-                <p></p><input type="password" name="password"><span></span></p>
+                <p></p><input type="password" name="password" class="password"><span></span></p>
                 <p class="hint"></p>
             </div>
-            <div class="email">
+            <div class="Email">
                 <p><label for="">邮　箱：</label></p>
-                <p><input type="text" name="email"><span></span></p>
+                <p><input type="text" name="email" class="email"><span></span></p>
                 <p class="hint"></p>
             </div>
-            <div class="phone">
+            <div class="call">
                 <p><label for="">手机号码：</label></p>
-                <p><input type="text" name="phone"><span></span></p>
+                <p><input type="text" name="phone" class="phone"><span></span></p>
                 <p class="hint"></p>
             </div>
             <p><input type="submit" value="提交注册" name="submit" id="submit"></p>
         </form>
+    </div>
+    <div class="footer">
+        <p>@mi.com京ICP证110507号京ICP备10046444号京公网安备11010802020134号京网文[2017]1530-131号</p>
+        <p>违法和不良信息举报电话: 185-0130-1238， 本网站所列数据，除特殊说明，所有数据均出自我司实验室测试</p>
     </div>
 </body>
 

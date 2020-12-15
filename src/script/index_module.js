@@ -1,4 +1,4 @@
-define([], () => {
+define(['pagination', 'jlazyload'], function() {
     return {
         init: function() {
             const $goods = $('.main-r');
@@ -15,7 +15,7 @@ define([], () => {
             let $num = 0;
             // 数据渲染
             $.ajax({
-                url: 'http://localhost:8080/dashboard/project-xiaomi/php/listdata.php',
+                url: 'http://192.168.64.2//dashboard/project-xiaomi/php/listdata.php',
                 dataType: 'json'
             }).done(function(data) {
                 let $strhtml = '';
@@ -24,7 +24,7 @@ define([], () => {
                         $strhtml += `
                         <div class="sj goods-sj">
                             <a href="javascript:;">
-                                <img class="list" src="${value.url}"/>
+                                <img class="list lazy" data-original="${value.url}" width="200" height="200"/>
                                 <h3 class="tit">${value.title}</h3>
                                 <p class="con">${value.describe}</p>
                                 <p class="price">￥${value.price}</p>
@@ -34,6 +34,7 @@ define([], () => {
                     }
                 });
                 $goods.html($strhtml);
+                $("img.lazy").lazyload({ effect: "fadeIn" });
             })
 
 
@@ -118,6 +119,22 @@ define([], () => {
             }, function() {
                 $(this).hide();
             });
+
+            //用户登录检测
+            if (localStorage.getItem('loginname')) {
+                $('.admin').show();
+                $('.login').hide();
+                $('.admin em').html(localStorage.getItem('loginname'));
+            }
+
+            //退出登录 - 删除本地存储
+            $('.admin a').on('click', function() {
+                $('.admin').hide();
+                $('.login').show();
+                localStorage.removeItem('loginname');
+            });
+
         }
+
     }
 })
