@@ -2,17 +2,12 @@
 
 body {
     background: rgb(238, 237, 237);
+    overflow: hidden;
 }
 
 .form {
-    position: fixed;
-    top: 0;
-    margin: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
     width: 850px;
-    height: 600px;
+    height: 550px;
     margin: 35px auto;
     background: #fff;
 }
@@ -43,14 +38,25 @@ form {
     margin: 0 265px;
 }
 
+.con {
+    clear: both;
+    width: 360px;
+    height: 35px;
+}
+
 label {
     font-size: 14px;
     line-height: 20px;
 }
 
 input {
+    float: left;
     width: 330px;
     height: 35px;
+}
+
+.con span {
+    float: right;
 }
 
 .hint {
@@ -68,4 +74,16 @@ input {
     border: 1px solid rgba(186, 186, 186, .3);
     color: #fff;
     cursor: pointer;
+}
+
+.footer {
+    margin: 0 auto;
+    width: 1226px;
+    padding-bottom: 20px;
+}
+
+.footer p {
+    font-size: 12px;
+    color: #999;
+    text-align: center;
 }
