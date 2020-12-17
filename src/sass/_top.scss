@@ -73,6 +73,14 @@ $font16:16px;
             @extend %topnav;
         }
     }
+    .admin {
+        color: #ddd;
+        font-size: $font12;
+        @extend %topnav;
+        em {
+            color: #ddd;
+        }
+    }
     .car {
         @extend %topnav-r;
         a {

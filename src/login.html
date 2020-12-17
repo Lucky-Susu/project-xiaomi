@@ -4,21 +4,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="小米帐号能使用小米手机，MIUI，小米云，多看阅读，米聊，小米社区等小米服务。" />
+    <meta name="keywords" content="小米帐号，小米账号，小米注册，注册，Mi Account，Sign in，小米，帐号，账号，小米帐户，登录，登陆，安全令牌，动态口令，小米注册，找回密码" />
     <title>小米帐号 -登录</title>
     <link rel="stylesheet" href="style/public.css">
-    <link rel="stylesheet" href="style/loginregistry.css">
+    <link rel="stylesheet" href="style/login.css">
+    <script src="https://cdn.bootcdn.net/ajax/libs/require.js/2.3.6/require.min.js" defer async=true data-main="script/main.js" id="currentpage" data-origin="login_module"></script>
 </head>
 
 <body>
-    <div class="main">
+    <header>
         <p class="logo"></p>
-        <h2>小米商城</h2>
-        <div class="form">
-            <h3>小米账号登录</h3>
-            <form action="index1.html" method="post">
-                <p><label for="">用户名：</label><input type="text" name="username" id="username"></p>
-                <p><label for="">密　码：</label><input type="password" name="password" id="password"></p>
-                <p><input type="button" value="登录" id="login"><a href="registry.html">立即注册</a></p>
+        <h3>小米商城</h3>
+    </header>
+    <!-- 主要内容 -->
+    <div class="main">
+        <div class="menu">
+            <h4>账户登录</h4>
+            <form action="index.html" method="post">
+                <div class="user">
+                    <p><label for="">用户名：</label></p>
+                    <p class="con"><input type="text" name="username" id="username"><span></span></p>
+                    <p class="hint"></p>
+                </div>
+                <div class="poss">
+                    <p><label for="">密　码：</label></p>
+                    <p class="con"><input type="password" name="password" class="password"><span></span></p>
+                    <p class="hint"></p>
+                </div>
+                <p class="btn"><input type="button" value="登录" id="login"><a href="registry.html" class="reg">立即注册</a></p>
             </form>
         </div>
     </div>
@@ -29,5 +43,3 @@
 </body>
 
 </html>
-<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="script/login.js"></script>

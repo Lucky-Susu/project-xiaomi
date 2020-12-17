@@ -122,7 +122,7 @@ define(['pagination', 'jlazyload'], function() {
 
             //用户登录检测
             if (localStorage.getItem('loginname')) {
-                $('.admin').show();
+                $('.admin').show().css('color', '#ddd');
                 $('.login').hide();
                 $('.admin em').html(localStorage.getItem('loginname'));
             }

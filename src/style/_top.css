@@ -10,7 +10,7 @@
   width: 1226px;
 }
 
-.top .top-navigation .topnav-li a, .top .dl a, .top .zc a, .top .xx a, .top .car a {
+.top .top-navigation .topnav-li a, .top .dl a, .top .zc a, .top .xx a, .top .admin, .top .car a {
   font-size: 14px;
   line-height: 50px;
   text-align: center;
@@ -48,6 +48,15 @@
 
 .top .zc {
   border-right: 1px solid #404040;
+}
+
+.top .admin {
+  color: #ddd;
+  font-size: 12px;
+}
+
+.top .admin em {
+  color: #ddd;
 }
 
 .top .car:hover {
